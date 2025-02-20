@@ -1,14 +1,93 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Static Website</title>
-    <base href="/">
-
-    <link type="text/css" rel="stylesheet" href="main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto & Blockchain</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <img src="logo.png" alt="DFINITY logo" />
+    <header>
+        <div class="container">
+            <h1>Crypto & Blockchain</h1>
+            <nav>
+                <ul>
+                    <li><a href="#tentang">Tentang</a></li>
+                    <li><a href="#crypto">Crypto</a></li>
+                    <li><a href="#blockchain">Blockchain</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="tentang" class="section">
+        <div class="container">
+            <h2>Tentang Crypto & Blockchain</h2>
+            <img src="logo.png" alt="Logo" class="section-img" width="100px">
+            <p>
+                Cryptocurrency adalah mata uang digital yang menggunakan teknologi blockchain untuk keamanan dan transparansi. 
+                Blockchain adalah teknologi ledger terdistribusi yang mencatat semua transaksi secara aman dan transparan.
+            </p>
+        </div>
+    </section>
+
+    <section id="crypto" class="section">
+        <div class="container">
+            <h2>Cryptocurrency Populer</h2>
+            <div class="crypto-list">
+                <div class="crypto-item">
+                    <img src="logo.png" alt="Bitcoin Logo" class="crypto-img">
+                    <h3>Bitcoin (BTC)</h3>
+                    <p>Bitcoin adalah cryptocurrency pertama dan paling terkenal, diciptakan oleh Satoshi Nakamoto pada tahun 2009.</p>
+                </div>
+                <div class="crypto-item">
+                    <img src="logo.png" alt="Ethereum Logo" class="crypto-img">
+                    <h3>Ethereum (ETH)</h3>
+                    <p>Ethereum adalah platform blockchain yang memungkinkan pembuatan smart contract dan aplikasi terdesentralisasi.</p>
+                </div>
+                <div class="crypto-item">
+                    <img src="logo.png" alt="Binance Coin Logo" class="crypto-img">
+                    <h3>Binance Coin (BNB)</h3>
+                    <p>Binance Coin adalah cryptocurrency yang digunakan dalam ekosistem Binance, salah satu pertukaran crypto terbesar di dunia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blockchain" class="section">
+        <div class="container">
+            <h2>Apa Itu Blockchain?</h2>
+            <img src="logo.png" alt="Ilustrasi Blockchain" class="section-img">
+            <p>
+                Blockchain adalah teknologi ledger terdistribusi yang mencatat semua transaksi dalam blok yang saling terhubung. 
+                Setiap blok mengandung data transaksi, timestamp, dan referensi ke blok sebelumnya, membuatnya aman dan transparan.
+            </p>
+        </div>
+    </section>
+
+    <section id="kontak" class="section">
+        <div class="container">
+            <h2>Kontak Kami</h2>
+            <form action="#" method="post">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="pesan">Pesan:</label>
+                <textarea id="pesan" name="pesan" rows="5" required></textarea>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Crypto & Blockchain. Semua hak dilindungi.</p>
+        </div>
+    </footer>
 </body>
 </html>
